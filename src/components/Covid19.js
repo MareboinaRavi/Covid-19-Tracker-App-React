@@ -59,7 +59,7 @@ function Covid19() {
                                if (inputValue === "") {
                                     return val
                                 } 
-                                else if (val.country.includes(inputValue)){
+                                else if (val.country.toLowerCase().includes(inputValue.toLowerCase()){
                                     return val
                                 }
                                 return false;
@@ -85,19 +85,7 @@ function Covid19() {
                         </TableBody>
                     </Table>
                 </TableContainer>
-                {/* {data.map( (item) => {
-                return(
-                    <>
-                   <h1>{item.country}</h1>
-                   <table>
-
-                   </table>
-                   </>
-                  
-                )
-            })} */}
             </div>
-
         </>
     );
 }
